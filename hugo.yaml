@@ -1,4 +1,6 @@
 baseURL: "https://www.jungukang.win/"
+languageCode: "en-us"
+theme: "hextra"
 # Hugo configuration file
 title: "Jungu Kang"
 # import hextra as module

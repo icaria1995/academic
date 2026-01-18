@@ -2,13 +2,13 @@
 title: ""
 menu: "main"
 subtitle: "PhD Candidate in Linguistics @ UCSC"
-body_class: "home"
+type: "home"
 ---
 
 <div style="margin-bottom: 40px;">
   <h1 style="font-size: 3.5rem; font-weight: 200; margin-bottom: 5px;">Jungu Kang</h1>
   <p style="font-size: 1.2rem; color: #555; font-weight: 300; margin-top: 0;">
-    PhD Student in Linguistics, UCSC
+    PhD Student at UC Santa Cruz.
   </p>
 </div>
 
