@@ -1,7 +1,7 @@
-baseURL: "https://www.jungukang.win/"
-languageCode: "en-us"
-title: "Jungu Kang"
-theme: "hextra"
+baseURL: 'https://jungukang.win/'
+languageCode: 'en-us'
+title: 'Jungu Kang'
+theme: 'hextra'
 
 # import hextra as module
 module:
