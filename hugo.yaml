@@ -51,7 +51,6 @@ params:
   description: "PhD Student in Linguistics at UCSC"
   math:
     enable: true
-  customCSS: ["css/custom.css"]
   footer:
     displayCopyright: false
     displayPoweredBy: false
