@@ -346,7 +346,7 @@ html.dark nav a[href$=".pdf"]:hover {
 }
 
 /* --- SECONDARY "ICON" BUTTON (Camera) --- */
-nav a[href*="https://www.instagram.com/jungurugu/"] {
+nav a[href*="https://photos.jungukang.com"] {
     background-color: transparent !important;
     color: #1f1f1f !important;
     border: 1.5px solid #1f1f1f !important;
@@ -367,19 +367,19 @@ nav a[href*="https://www.instagram.com/jungurugu/"] {
 }
 
 /* Hover Effect */
-nav a[href*="https://www.instagram.com/jungurugu/"]:hover {
+nav a[href*="https://photos.jungukang.com"]:hover {
     background-color: #000000 !important; /* Fill with black on hover */
     color: #ffffff !important;              /* Icon turns white */
     transform: rotate(-10deg);           /* Playful tilt */
 }
 
 /* Dark Mode */
-html.dark nav a[href*="https://www.instagram.com/jungurugu/"] {
+html.dark nav a[href*="https://photos.jungukang.com"] {
     color: #fff !important;
     border-color: #fff !important;
 }
 
-html.dark nav a[href*="https://www.instagram.com/jungurugu/"]:hover {
+html.dark nav a[href*="https://photos.jungukang.com"]:hover {
     background-color: #fff !important;
     color: #000 !important;
 }

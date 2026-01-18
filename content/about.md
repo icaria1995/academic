@@ -25,7 +25,7 @@ I have a small project called One Photo One Day. It's an attempt to take at leas
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
 
-  {{< image-card url="https://your-portfolio.com" image="/images/web_photo-3.jpg" subtitle="↗ My own little photo archive">}}
+  {{< image-card url="https://photos.jungukang.com" image="/images/web_photo-3.jpg" subtitle="↗ My own little photo archive">}}
     photo.graphy
   {{< /image-card >}}
 
