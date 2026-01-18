@@ -1,0 +1,420 @@
+/* --- 1. FONTS IMPORT --- */
+/* Fetch Montserrat (Titles) and Source Sans 3 (Body) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* --- 2. TYPOGRAPHY ASSIGNMENT --- */
+body {
+  font-family: 'Source Sans 3', 'Segoe UI', sans-serif;
+  font-weight: 500;
+}
+
+/* Apply Montserrat to all headers and the site logo */
+h1, h2, h3, h4, h5, h6, .hextra-logo-title {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700; /* Bold titles */
+  letter-spacing: -0.02em; /* Tighter, cleaner look */
+}
+
+/* --- 3. ROUNDED CORNERS --- */
+.hextra-card, article, img {
+  border-radius: 16px !important;
+}
+
+/* --- 4. THE ACADEMIC NOIR BUTTON --- */
+.button {
+  display: inline-block;
+  background-color: #1f1f1f;
+  color: #ffffff !important;
+  padding: 10px 24px;
+  text-decoration: none !important;
+  border-radius: 999px !important;
+  font-family: 'Source Sans 3', sans-serif; /* Keep buttons readable */
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.button:hover {
+  background-color: #0069ea;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+
+/* --- RESEARCH CARDS --- */
+.research-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02); /* Very subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+}
+
+.research-card h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #1f1f1f;
+  margin-bottom: 8px;
+}
+
+.research-card .authors {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.research-card .journal {
+  color: #888;
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.research-card .abstract {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* --- DARK MODE RESEARCH CARDS --- */
+html.dark .research-card {
+    background-color: #1a1a1a !important;  /* Charcoal background */
+    border-color: #333 !important;         /* Dark border */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Deeper shadow for depth */
+}
+
+/* 1. Flip the Text Colors */
+html.dark .research-card h3 {
+    color: #ffffff !important; /* Pure White Title */
+}
+
+html.dark .research-card .authors {
+    color: #d0d0d0 !important; /* Light Grey Authors */
+}
+
+html.dark .research-card .journal {
+    color: #999 !important;    /* Dimmed Journal Name */
+}
+
+html.dark .research-card .abstract {
+    color: #e5e5e5 !important; /* Very readable text */
+}
+
+/* 2. Fix the "Tiny Buttons" (PDF / Code) */
+html.dark .tiny-button {
+    background-color: #333 !important; /* Dark Grey Button */
+    color: #fff !important;            /* White Text */
+    border-color: #444 !important;
+}
+
+html.dark .tiny-button:hover {
+    background-color: #fff !important; /* Flash to White on Hover */
+    color: #000 !important;            /* Black Text */
+    border-color: #fff !important;
+}
+
+/* Tiny Buttons for PDF links */
+.tiny-button {
+  display: inline-block;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 10px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.2s;
+}
+
+.tiny-button:hover {
+  background-color: #1f1f1f;
+  color: #fff;
+  border-color: #1f1f1f;
+}
+
+/* --- HOMEPAGE NEWS SECTION (Smart Colors) --- */
+.news-section {
+  margin-top: 40px;
+  border-top: 2px solid #e5e5e5; /* Light mode divider */
+  padding-top: 20px;
+}
+
+.news-title {
+  font-size: 1.1rem;
+  color: #333; /* Dark Grey for Light Mode */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.news-item {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: baseline;
+}
+
+.news-date {
+  font-weight: 700;
+  color: #000; /* Pure Black for Light Mode */
+  min-width: 90px;
+  flex-shrink: 0;
+}
+
+.news-text {
+  color: #444; /* Readable Dark Grey */
+  margin-left: 10px;
+  line-height: 1.5;
+}
+
+/* --- DARK MODE OVERRIDES (The Fix) --- */
+
+/* 1. Handle the "Toggle Button" (Class-based) */
+html.dark .news-section {
+    border-top-color: #333;
+}
+html.dark .news-title {
+    color: #e0e0e0; /* White-ish title */
+}
+html.dark .news-date {
+    color: #fff;    /* Pure White date */
+}
+html.dark .news-text {
+    color: #ccc;    /* Light Grey text */
+}
+
+/* 2. Handle System Settings (OS Preference) */
+@media (prefers-color-scheme: dark) {
+    /* Only apply if the user hasn't manually forced light mode */
+    html:not(.light) .news-section {
+        border-top-color: #333;
+    }
+    html:not(.light) .news-title {
+        color: #e0e0e0;
+    }
+    html:not(.light) .news-date {
+        color: #fff;
+    }
+    html:not(.light) .news-text {
+        color: #ccc;
+    }
+}
+
+/* --- HIGH CONTRAST MENU (The Fix) --- */
+
+/* 1. Base Styles (Bold & Opaque) */
+.nav-link, .menu-item a, nav a {
+    font-weight: 500 !important; /* Make it semi-bold */
+    opacity: 1 !important;       /* Remove transparency */
+    transition: color 0.2s ease;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.8px;
+}
+
+/* 2. Light Mode (Default) */
+body:not(.dark) .nav-link, 
+body:not(.dark) nav a {
+    color: #000; /* Force Pitch Black */
+}
+
+/* 3. Dark Mode (Toggle Button Active) */
+html.dark .nav-link, 
+html.dark nav a {
+    color: #fff !important; /* Force Pure White */
+}
+
+/* 4. Dark Mode (System Preference) */
+@media (prefers-color-scheme: dark) {
+    /* Only apply if user hasn't forced Light Mode */
+    html:not(.light) .nav-link, 
+    html:not(.light) nav a {
+        color: #fff !important;
+    }
+}
+
+
+/* Dark mode safety for the logo */
+html.dark a.navbar-brand,
+html.dark a.navbar-brand * {
+    color: #fff !important;
+}
+
+/* --- CV BUTTON RESTORATION --- */
+/* Target any menu link that points to a PDF */
+nav a[href$=".pdf"] {
+    background-color: #101010 !important; /* Dark button color */
+    color: #ffffff !important;           /* Force White Text */
+    padding: 8px 20px;        /* Padding for "Pill" shape */
+    border-radius: 50px !important;      /* Rounded corners */
+    font-weight: 600 !important;
+    margin-left: 10px;                   /* Add space from other links */
+    display: inline-flex !important;     /* Fix alignment */
+    align-items: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Hover Effect */
+nav a[href$=".pdf"]:hover {
+    background-color: #0069ea !important;   /* Lighter grey on hover */
+    transform: translateY(-2px);         /* Slight lift */
+    color: #fff !important;
+}
+
+/* Dark Mode: Flip the colors */
+html.dark nav a[href$=".pdf"] {
+    background-color: #fff !important;   /* White button */
+    color: #000 !important;              /* Black text */
+}
+
+html.dark nav a[href$=".pdf"]:hover {
+    background-color: #0069ea !important;
+    color: #fff !important;
+}
+
+/* --- IMAGE LINK CARDS --- */
+.image-card {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 250px; /* Adjust height as needed */
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+/* Dark overlay to make text readable */
+.image-card-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Darkens the photo by 30% */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.image-card-title {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  
+  z-index: 2;
+}
+
+.image-card-subtitle {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.9rem;
+  margin-top: 5px;
+  opacity: 0; /* Hidden by default */
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+/* --- HOVER EFFECTS --- */
+.image-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.image-card:hover .image-card-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Darker on hover */
+}
+
+.image-card:hover .image-card-subtitle {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- SECONDARY "ICON" BUTTON (Camera) --- */
+nav a[href*="https://www.instagram.com/jungurugu/"] {
+    background-color: transparent !important;
+    color: #1f1f1f !important;
+    border: 1.5px solid #1f1f1f !important;
+    
+    /* Make it a circle */
+    width: 36px !important;       /* Fixed width */
+    height: 36px !important;      /* Fixed height */
+    padding: 0 !important;        /* Remove standard padding */
+    border-radius: 50% !important; /* Perfect circle */
+    
+    /* Center the icon */
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: 2px;
+    transition: all 0.2s ease;
+}
+
+/* Hover Effect */
+nav a[href*="https://www.instagram.com/jungurugu/"]:hover {
+    background-color: #000000 !important; /* Fill with black on hover */
+    color: #ffffff !important;              /* Icon turns white */
+    transform: rotate(-10deg);           /* Playful tilt */
+}
+
+/* Dark Mode */
+html.dark nav a[href*="https://www.instagram.com/jungurugu/"] {
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+html.dark nav a[href*="https://www.instagram.com/jungurugu/"]:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+/* --- MINIMALIST "EDITORIAL" HYPERLINKS --- */
+/* We target links specifically inside paragraphs (p) and lists (li) 
+   to avoid breaking your buttons, navbar, or cards. */
+article p a, 
+article li a,
+.content a:not(.button):not(.image-card) {
+    color: inherit !important;        /* 1. Remove the Blue. Use text color. */
+    text-decoration: none !important; /* 2. Remove standard underline. */
+    border-bottom: 1px solid #a0a0a0; /* 3. Add a thin, Neutral Grey line. */
+    transition: all 0.2s ease;        /* 4. Smooth animation. */
+    padding-bottom: 1px;              /* 5. Give the text some breathing room. */
+}
+
+/* HOVER EFFECT: High Contrast */
+article p a:hover, 
+article li a:hover,
+.content a:not(.button):not(.image-card):hover {
+    border-bottom: 2px solid #000;    /* Line gets thicker and Pitch Black */
+    background-color: rgba(0,0,0,0.05); /* Optional: Very subtle grey highlight */
+}
+
+/* --- DARK MODE ADAPTATION --- */
+html.dark article p a, 
+html.dark article li a,
+html.dark .content a:not(.button):not(.image-card) {
+    border-bottom-color: #666;        /* Dark Grey line for dark mode */
+}
+
+html.dark article p a:hover, 
+html.dark article li a:hover,
+html.dark .content a:not(.button):not(.image-card):hover {
+    border-bottom-color: #fff;        /* Pure White line on hover */
+    background-color: rgba(255,255,255,0.1);
+}

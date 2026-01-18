@@ -1,17 +1,48 @@
 ---
-title: My Site
-toc: false
+title: ""
+menu: "main"
+subtitle: "PhD Candidate in Linguistics @ UCSC"
+body_class: "home"
 ---
 
-This is the landing page.
+<div style="margin-bottom: 40px;">
+  <h1 style="font-size: 3.5rem; font-weight: 200; margin-bottom: 5px;">Jungu Kang</h1>
+  <p style="font-size: 1.2rem; color: #555; font-weight: 300; margin-top: 0;">
+    PhD Student in Linguistics, UCSC
+  </p>
+</div>
 
-## Explore
+<div style="display: grid; grid-template-columns: 2fr 1fr; gap: 50px; align-items: start;">
 
-{{< cards >}}
-  {{< card link="docs" title="Docs" icon="book-open" >}}
-  {{< card link="about" title="About" icon="user" >}}
-{{< /cards >}}
+  <div>
+    <h2>About Me</h2>
+    <p>
+      I am a second-year PhD student in Linguistics at the 
+      <a href="https://linguistics.ucsc.edu/">University of California, Santa Cruz</a>.
+      My research focuses on <strong>generative syntax</strong>, particularly on case marking, quantifiers, and prosody.
+    </p>
+<br>
+<a href="/files/cv_Jungu.pdf" class="button">My CV (PDF)<br><span style=font-size:0.8rem>(Updated:Jan.07.2026)</span></a>
+{{< news-section >}}
 
-## Documentation
+{{< news-item date="Jan 2026" >}}
+Working on QP1
+{{< /news-item >}}
 
-For more information, visit [Hextra](https://imfing.github.io/hextra).
+{{< news-item date="Sep 2024" >}}
+Started linguistics PhD in UCSC
+{{< /news-item >}}
+
+{{< news-item date="Sep 2023" >}}
+Presented at WAFL 17 in Ulaanbaatar, Mongolia.
+{{< /news-item >}}
+
+{{< /news-section >}}
+
+</div>
+
+  <div>
+    <img src="/images/jungugu.jpg" alt="Jungu Kang" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+  </div>
+
+</div>

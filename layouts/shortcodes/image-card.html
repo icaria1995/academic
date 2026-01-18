@@ -1,0 +1,8 @@
+{{ $link := .Get "url" }}
+{{ $img := .Get "image" | relURL }}
+{{ $sub := .Get "subtitle" | default "↗ Visit Link" }} <a href="{{ $link }}" target="_blank" class="image-card" style="background-image: url('{{ $img }}');">
+  <div class="image-card-overlay">
+    <span class="image-card-title">{{ .Inner }}</span>
+    <span class="image-card-subtitle">{{ $sub }}</span>
+  </div>
+</a>

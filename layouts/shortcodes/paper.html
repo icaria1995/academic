@@ -1,0 +1,11 @@
+<div class="research-card">
+  <h3>{{ .Get "title" }}</h3>
+  <p class="authors">{{ .Get "authors" | markdownify }}</p>
+  <p class="journal"><em>{{ .Get "journal" }}</em></p>
+  <p class="abstract">{{ .Inner | markdownify }}</p>
+  
+  <div class="links">
+    {{ with .Get "pdf" }}<a href="{{ . }}" class="tiny-button">PDF</a>{{ end }}
+    {{ with .Get "bib" }}<a href="{{ . }}" class="tiny-button">BibTeX</a>{{ end }}
+  </div>
+</div>
