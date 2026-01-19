@@ -238,7 +238,7 @@ html.dark a.navbar-brand * {
 
 /* --- CV BUTTON RESTORATION --- */
 /* Target any menu link that points to a PDF */
-nav a[href$=".pdf"] {
+nav a[href*="dropbox"] {
     background-color: #101010 !important; /* Dark button color */
     color: #ffffff !important;           /* Force White Text */
     padding: 8px 20px;        /* Padding for "Pill" shape */
@@ -251,19 +251,19 @@ nav a[href$=".pdf"] {
 }
 
 /* Hover Effect */
-nav a[href$=".pdf"]:hover {
+nav a[href*="dropbox"]:hover {
     background-color: #0069ea !important;   /* Lighter grey on hover */
     transform: translateY(-2px);         /* Slight lift */
     color: #fff !important;
 }
 
 /* Dark Mode: Flip the colors */
-html.dark nav a[href$=".pdf"] {
+html.dark nav a[href*="dropbox"] {
     background-color: #fff !important;   /* White button */
     color: #000 !important;              /* Black text */
 }
 
-html.dark nav a[href$=".pdf"]:hover {
+html.dark nav a[href*="dropbox"]:hover {
     background-color: #0069ea !important;
     color: #fff !important;
 }
