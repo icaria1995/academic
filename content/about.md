@@ -26,7 +26,7 @@ I have a small project called One Photo One Day. It's an attempt to take at leas
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
 
   {{< image-card url="https://photos.jungukang.com" image="/images/web_photo-3.jpg" subtitle="↗ My own little photo archive">}}
-    photo.graphy
+    surface.form
   {{< /image-card >}}
 
   {{< image-card url="https://instagram.com/jungurugu" image="/images/web_photo-8.jpg" subtitle="↗ Mainly updates 1P1D" >}}
