@@ -194,22 +194,7 @@ html.dark .news-text {
     color: #ccc;    /* Light Grey text */
 }
 
-/* 2. Handle System Settings (OS Preference) */
-@media (prefers-color-scheme: dark) {
-    /* Only apply if the user hasn't manually forced light mode */
-    html:not(.light) .news-section {
-        border-top-color: #333;
-    }
-    html:not(.light) .news-title {
-        color: #e0e0e0;
-    }
-    html:not(.light) .news-date {
-        color: #fff;
-    }
-    html:not(.light) .news-text {
-        color: #ccc;
-    }
-}
+
 
 /* --- HIGH CONTRAST MENU (The Fix) --- */
 
