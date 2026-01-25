@@ -403,3 +403,85 @@ html.dark .content a:not(.button):not(.image-card):hover {
     border-bottom-color: #fff;        /* Pure White line on hover */
     background-color: rgba(255,255,255,0.1);
 }
+
+/* --- NAMU ICON BUTTON (Syntax Tool) --- */
+nav a[href*="namu.jungukang.com"] {
+    background-color: transparent !important;
+    color: #1f1f1f !important;
+    border: 1.5px solid #1f1f1f !important; /* Matches camera stroke */
+    
+    width: 36px !important;
+    height: 36px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: 8px; /* Space between the two icons */
+    transition: all 0.2s ease;
+}
+
+/* Hover Effect: Matches the camera tilt */
+nav a[href*="namu.jungukang.com"]:hover {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    transform: rotate(10deg); /* Tilts opposite to the camera for balance */
+}
+
+/* =========================================
+   UI COMPONENT: THE CONTINUUM TOOLTIP
+   ========================================= */
+
+/* --- SCOPED POPUP LOGIC (Buttons Only) --- */
+/* --- 1. THE STABLE BASE --- */
+nav a[href*="namu"], 
+nav a[href*="photos"], 
+nav a[href*="dropbox"] {
+    position: relative !important;
+    transform: none !important; /* Forces the anchor to stay level */
+}
+
+/* --- 2. THE STABLE POPUP --- */
+nav a[href*="namu"]::after, 
+nav a[href*="photos"]::after, 
+nav a[href*="dropbox"]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%) translateY(5px);
+    
+    background: #111;
+    color: #fff !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: lowercase;
+    padding: 4px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    z-index: 9999;
+}
+
+/* --- 3. THE HOVER TRIGGER (Text Appears) --- */
+nav a[href*="namu"]:hover::after, 
+nav a[href*="photos"]:hover::after, 
+nav a[href*="dropbox"]:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(12px); /* Slides down but NO rotation */
+}
+
+/* --- 4. THE HOVER TRIGGER (Icon Tilts) --- */
+/* We target the span inside so the icon tilts, but the anchor (and popup) don't */
+nav a[href*="namu"]:hover span, 
+nav a[href*="photos"]:hover span {
+    display: inline-block;
+    transform: rotate(10deg);
+    transition: transform 0.2s ease;
+}
