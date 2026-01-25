@@ -5,11 +5,11 @@ description: "Life outside of linguistics"
 
 <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 30px; align-items: center; margin-bottom: 40px;">
   <div>
-  <h3>Ex-linguistics</h3>
+  <h3>Extra-linguistics</h3>
     <p>
       When I am not drawing syntax trees, splitting sound files, or debugging LaTeX, I enjoy...
-<h3>Photography!</h3>
-I have a small project called One Photo One Day. It's an attempt to take at least one photo every day and keep posting them. It's been going for two years and more!
+<h3>Photography</h3>
+I have a small project called One Photo One Day. It's an attempt to take at least one photo every day and keep posting them. It's been going for two years and now in year three.
 
 </p>
   </div>
