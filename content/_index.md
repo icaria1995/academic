@@ -22,7 +22,7 @@ type: "home"
       My research focuses on <strong>generative syntax</strong>, particularly on case marking, quantifiers, and prosody.
     </p>
 <br>
-<a href="https://www.dropbox.com/scl/fi/hbgpsdr2h2a5yn9zbdsh5/cv.pdf?rlkey=850yhhdrqiruz1j89aa9yqeos&st=ng1zesfz&raw=1" class="button">My CV (PDF)<br><span style=font-size:0.8rem>(Updated:Jan.18.2026)</span></a>
+<a href="https://www.dropbox.com/scl/fi/hbgpsdr2h2a5yn9zbdsh5/cv.pdf?rlkey=850yhhdrqiruz1j89aa9yqeos&st=ng1zesfz&raw=1" class="button">My CV (PDF)<br><span style=font-size:0.8rem>(Updated:Feb.24.2026)</span></a>
 {{< news-section >}}
 
 {{< news-item date="Present" >}}
